@@ -1,9 +1,10 @@
-🚀 API Automation Framework using Rest Assured (Java)
+# 🚀 API Automation Framework using Rest Assured (Java)
 
-👨‍💻 Author: Pramod Dutta
+## 👨‍💻 Author: Shafna S
+
 A powerful, scalable & CI/CD-ready automation framework built using Rest Assured + Java for testing Restful Booker CRUD APIs with best-practice architecture and modern reporting.
 
-⭐ Project Highlights
+### ⭐ Project Highlights
 
 ✅ End-to-End REST API Automation
 
@@ -19,14 +20,16 @@ A powerful, scalable & CI/CD-ready automation framework built using Rest Assured
 
 🧼 Clean, Scalable & Maintainable Codebase
 
-▶️ Run the Test Suite
+### ▶️ Run the Test Suite
+
 mvn test -Dsurefire.suiteXmlFiles=testng.xml
 
 
 📸 Execution Preview
 (Add your screenshots here)
 
-🛠️ Tech Stack
+### 🛠️ Tech Stack
+
 🔧 Tool/Tech	📘 Description
 ☕ Java	JDK 22+
 🧪 Rest Assured	API Automation Library
@@ -39,7 +42,8 @@ mvn test -Dsurefire.suiteXmlFiles=testng.xml
 📈 Allure Reports	Rich HTML Reports
 🧱 Hybrid Framework	Scalable Architecture
 🤖 Jenkins	CI/CD Automation
-🗂️ Framework Architecture
+
+### 🗂️ Framework Architecture
 
 📦 Core Components Include
 
@@ -59,7 +63,7 @@ mvn test -Dsurefire.suiteXmlFiles=testng.xml
 
 📸 Add architecture diagram here
 
-🔁 CI/CD Execution (Jenkins)
+### 🔁 CI/CD Execution (Jenkins)
 
 Use the Jenkins pipeline to trigger:
 
@@ -71,7 +75,8 @@ Use the Jenkins pipeline to trigger:
 
 📸 Pipeline Screenshot Placeholder
 
-⚙️ Maven Configuration (pom.xml)
+### ⚙️ Maven Configuration (pom.xml)
+
 <build>
 <plugins>
 <plugin>
@@ -87,10 +92,12 @@ Use the Jenkins pipeline to trigger:
 </plugins>
 </build>
 
-▶️ Run Using:
+### ▶️ Run Using:
+
 mvn clean test -DsuiteXmlFile=testng.xml
 
-⚡ Parallel Execution
+### ⚡ Parallel Execution
+
 <suite name="All Test Suite" parallel="methods" thread-count="2">
 
 
@@ -98,7 +105,8 @@ mvn clean test -DsuiteXmlFile=testng.xml
 
 📉 Optimized CPU Usage
 
-🔗 Integration Test Execution
+### 🔗 Integration Test Execution
+
 mvn clean test -DsuiteXmlFile=testng-integration.xml
 
 
@@ -112,25 +120,31 @@ Includes:
 
 ✔️ Delete Booking
 
-📊 Allure Reporting
-▶️ Serve Allure Report
+### 📊 Allure Reporting
+
+### ▶️ Serve Allure Report
+
 allure serve allure-results/
 
 
-📸 Allure Dashboard Screenshot Placeholder
+### 📸 Allure Dashboard Screenshot Placeholder
 
-🧾 Allure Setup Guide
-1️⃣ Install Allure (Mac)
+### 🧾 Allure Setup Guide
+
+### 1️⃣ Install Allure (Mac)
+
 brew install allure
 
-2️⃣ Add Dependency
+### 2️⃣ Add Dependency
+
 <dependency>
 <groupId>io.qameta.allure</groupId>
 <artifactId>allure-testng</artifactId>
 <version>2.13.0</version>
 </dependency>
 
-3️⃣ Add Allure Maven Plugin
+### 3️⃣ Add Allure Maven Plugin
+
 <plugin>
 <groupId>io.qameta.allure</groupId>
 <artifactId>allure-maven</artifactId>
@@ -140,13 +154,15 @@ brew install allure
 </configuration>
 </plugin>
 
-4️⃣ Generate Reports
+### 4️⃣ Generate Reports
+
 mvn clean test
 allure generate target/allure-results --clean -o allure-report
 allure open allure-report
 
-🧪 POSTMAN Assignment Scenarios
-✅ CRUD Operations (with Auth)
+### 🧪 POSTMAN Assignment Scenarios
+
+#### ✅ CRUD Operations (with Auth)
 
 ➕ Create → ✏️ Update → 🔍 Get → ✔ Verify
 
@@ -160,7 +176,7 @@ allure open allure-report
 
 ✏️ Update on Deleted ID
 
-✅ Single Request Validation
+#### ✅ Single Request Validation
 
 ✔ Status Code
 
@@ -168,7 +184,7 @@ allure open allure-report
 
 ✔ Response Body
 
-📦 Postman Collection Includes
+### 📦 Postman Collection Includes
 
 Restful Booker CRUD
 
@@ -176,7 +192,7 @@ Test Scripts
 
 Hardcoded Integration Scenarios
 
-🌟 Why Use This Framework?
+### 🌟 Why Use This Framework?
 
 ✔ Clean & Scalable Architecture
 ✔ CI/CD Ready
